@@ -1,0 +1,67 @@
+html,
+body {
+    direction: rtl;
+}
+
+.nLinks li a {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.nLinks li a::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    right: -10px;
+    transition: 0.2s;
+}
+
+.top-content .contact-di a {
+    direction: ltr;
+}
+
+.contact-us-bottom a::before {
+    content: "";
+    position: absolute;
+    left: -1162px;
+    height: 2px;
+    width: 721%;
+    background-color: white;
+    top: 48%;
+    transition: 0.5s;
+}
+
+@media (max-width: 1101px) {
+    .navCont {
+        display: flex;
+        position: fixed;
+        top: 80px;
+        left: -200%;
+        transition: 0.2s;
+        z-index: 5;
+        height: calc(100vh - 80px);
+        overflow-y: scroll;
+        padding-top: 0;
+        width: 390px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navCont {
+        width: 100%;
+    }
+}
+
+.contact-us-bottom a::before {
+    content: "";
+    position: absolute;
+    left: -1462px;
+    height: 2px;
+    width: 908%;
+    background-color: white;
+    top: 48%;
+    transition: 0.5s;
+}
